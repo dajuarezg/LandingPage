@@ -1,0 +1,196 @@
+/* ====== GENERAL STYLING ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====== HEADER ====== */
+header {
+  width: 100%;
+  background-color: #f6f4f4;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.titleWebsite {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.flagUS {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  transform: rotate(10deg);
+}
+
+/* ====== TOP CONTENT ====== */
+.topContent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(65, 151, 151);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.adText {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+.socialMediaImg {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 10px;
+}
+
+/* ====== FORM + STEPS ====== */
+.stepsFormContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.stepsList {
+  font-size: 50px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.form-box {
+  background-color: rgba(65, 151, 151, 0.611);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.form-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgb(65, 151, 151);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-box button {
+  background-color: rgb(65, 151, 151);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: 4px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== FOOTER ====== */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(65, 151, 151);
+  font-size: 14px;
+  color: white;
+  padding: 15px 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .adText {
+    font-size: 40px;
+  }
+
+  .stepsList {
+    font-size: 24px;
+  }
+
+  .form-box h2 {
+    font-size: 20px;
+  }
+
+  .form-box button {
+    font-size: 18px;
+  }
+
+  .flagUS {
+    width: 70px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Cellphones*/
+@media (max-width: 480px) {
+  .adText {
+    font-size: 30px;
+  }
+
+  .stepsList {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .form-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-box h2 {
+    font-size: 18px;
+  }
+
+  .form-box button {
+    font-size: 16px;
+  }
+
+  .flagUS {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
